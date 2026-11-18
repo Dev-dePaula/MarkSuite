@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marksuite — A gestão empresarial de Angola, revolucionada</title>
+<meta name="description" content="CRM, projectos, pessoas, facturação e finanças numa única plataforma, com inteligência artificial. Feito em Angola, em kwanzas. Pague por Multicaixa Express.">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script>document.documentElement.className += ' js';</script>
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/motion.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect width="16" height="20" x="4" y="2" rx="2"/><path d="M8 6h8M16 14v4M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"/><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"/></symbol>
+  <symbol id="i-trend" viewBox="0 0 24 24"><path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></symbol>
+  <symbol id="i-folder" viewBox="0 0 24 24"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.7-.9L9.6 3.9A2 2 0 0 0 7.9 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M9.9 15.5A2 2 0 0 0 8.5 14.1l-6.1-1.6a.5.5 0 0 1 0-1L8.5 9.9A2 2 0 0 0 9.9 8.5l1.6-6.1a.5.5 0 0 1 1 0l1.6 6.1a2 2 0 0 0 1.4 1.4l6.1 1.6a.5.5 0 0 1 0 1l-6.1 1.6a2 2 0 0 0-1.4 1.4l-1.6 6.1a.5.5 0 0 1-1 0z"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2.1-5.4A8.4 8.4 0 1 1 21 11.5z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></symbol>
+</svg>
+
+<div class="progress" id="prog" aria-hidden="true"></div>
+
+<header class="top" id="hdr">
+  <div class="wrap">
+    <a class="brand" href="#topo" aria-label="Marksuite — início"><img src="assets/logo.png" alt="Marksuite — Software de Gestão Empresarial ERP" width="70" height="42"></a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#sistema">O sistema</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#valores">Valores</a>
+      <a href="#perguntas">Perguntas</a>
+    </nav>
+    <a class="btn btn-primary mag" href="#valores">Comprar</a>
+  </div>
+</header>
+
+<main id="topo">
+
+<!-- ================= HERÓI ================= -->
+<section class="hero" id="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <div class="grid"></div>
+    <div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div>
+  </div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <span class="pill" data-reveal><i></i> Feito em Angola · em kwanzas · com IA</span>
+      <h1 data-reveal data-delay="80">A gestão das empresas em Angola, <em>revolucionada.</em></h1>
+      <p class="rotline" data-reveal data-delay="160">Com o Marksuite, a sua empresa <span class="nw"><span class="rot" id="rot" data-words="factura,cobra,contabiliza,planeia,decide,cresce">factura</span><span class="caret" aria-hidden="true"></span>.</span></p>
+      <p class="lead" data-reveal data-delay="220">Vendas, projectos, pessoas e finanças numa única plataforma, com facturação, contabilidade e uma IA que ajuda a decidir. Nascemos em Angola para mudar a forma como as empresas se gerem.</p>
+      <div class="cta" data-reveal data-delay="300">
+        <a class="btn btn-primary mag shine" href="#valores">Ver valores e comprar <svg class="ic"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-ghost mag" href="#sistema">Explorar o sistema</a>
+      </div>
+      <ul class="ticks" data-reveal data-delay="380">
+        <li><svg class="ic"><use href="#i-check"/></svg> Implementação e formação da equipa incluídas</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Pagamento por Multicaixa Express, em kwanzas</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Suporte técnico corrente na mensalidade</li>
+      </ul>
+    </div>
+
+    <div class="stage" data-reveal="scale" data-delay="200">
+      <div class="mock tilt" id="tilt" aria-hidden="true">
+        <div class="mock-bar"><i></i><i></i><i></i><span>Painel · Marksuite</span><em class="live"><b></b> ao vivo</em></div>
+        <div class="mock-body">
+          <aside class="mock-side"><b></b><b class="on"></b><b></b><b></b><b></b></aside>
+          <div class="mock-main">
+            <div class="tiles">
+              <div class="tile"><small>Facturas em aberto</small><strong data-count="18" data-delay="900">18</strong><span class="sk w50"></span></div>
+              <div class="tile"><small>Receita do mês</small><strong data-count="12.4" data-dec="1" data-suffix=" M Kz" data-delay="1100">12,4 M Kz</strong><span class="sk w70"></span></div>
+              <div class="tile"><small>Propostas activas</small><strong data-count="7" data-delay="1300">7</strong><span class="sk w50"></span></div>
+            </div>
+            <div class="chart"><small>Entradas vs saídas</small>
+              <div class="bars"><i style="--h:38%"></i><i style="--h:52%"></i><i style="--h:44%"></i><i style="--h:66%"></i><i style="--h:58%"></i><i style="--h:78%"></i><i style="--h:62%"></i><i style="--h:84%"></i><i style="--h:72%"></i><i style="--h:92%"></i></div>
+            </div>
+            <div class="brief"><small><svg class="ic"><use href="#i-spark"/></svg> Briefing executivo</small><p id="tw">Aqui está o seu briefing de hoje.</p><span class="sk w90"></span><span class="sk w70"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="toast t1" aria-hidden="true"><span class="ti g"><svg class="ic"><use href="#i-check"/></svg></span><div><b>Factura emitida</b><small>Cliente avisado por WhatsApp</small></div></div>
+      <div class="toast t2" aria-hidden="true"><span class="ti b"><svg class="ic"><use href="#i-wallet"/></svg></span><div><b>Pagamento recebido</b><small>Caixa actualizada</small></div></div>
+      <div class="toast t3" aria-hidden="true"><span class="ti a"><svg class="ic"><use href="#i-trend"/></svg></span><div><b>Proposta sem resposta</b><small>Alerta automático</small></div></div>
+      <div class="toast t4" aria-hidden="true"><span class="ti p"><svg class="ic"><use href="#i-spark"/></svg></span><div><b>Briefing pronto</b><small>Gerado pela IA</small></div></div>
+      <p class="mock-note">Ilustração do painel com dados fictícios</p>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="track">
+  <span>Facturação</span><span>IVA</span><span>Contabilidade</span><span>Tesouraria</span><span>Vendas</span><span>Projectos</span><span>Pessoas</span><span>Inteligência artificial</span><span>Multicaixa Express</span><span>Kwanzas</span>
+  <span>Facturação</span><span>IVA</span><span>Contabilidade</span><span>Tesouraria</span><span>Vendas</span><span>Projectos</span><span>Pessoas</span><span>Inteligência artificial</span><span>Multicaixa Express</span><span>Kwanzas</span>
+</div></div>
+
+<!-- ================= ANTES / DEPOIS ================= -->
+<section class="sec" id="mudanca">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <span class="eyebrow">A mudança</span>
+      <h2>Da confusão ao comando</h2>
+      <p class="sub">Compare o dia a dia da empresa antes e depois do Marksuite.<span class="only-d"> Arraste o seletor.</span></p>
+    </div>
+    <div class="ba" id="ba" style="--p:50%" data-reveal="scale">
+      <div class="ba-side ba-before">
+        <div class="ba-tag">Antes</div>
+        <ul>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-x"/></svg></span>Facturas feitas à mão, uma a uma</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-x"/></svg></span>Contas espalhadas em folhas de Excel</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-x"/></svg></span>Caixa sem visibilidade do que entra e sai</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-x"/></svg></span>Cobranças e propostas que ninguém lembrou</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-x"/></svg></span>Decisões tomadas por intuição</li>
+        </ul>
+      </div>
+      <div class="ba-side ba-after">
+        <div class="ba-tag">Com o Marksuite</div>
+        <ul>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-check"/></svg></span>Facturas com IVA, QR code e hash, e o cliente avisado por WhatsApp</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-check"/></svg></span>Lançamentos contabilísticos gerados pela facturação</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-check"/></svg></span>Fluxo de caixa e facturas em aberto num só painel</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-check"/></svg></span>Alertas de cobranças vencidas e propostas sem resposta</li>
+          <li><span class="ba-ic"><svg class="ic"><use href="#i-check"/></svg></span>Briefing diário e uma IA que responde sobre os seus dados</li>
+        </ul>
+      </div>
+      <div class="ba-handle" aria-hidden="true"><span><svg class="ic"><use href="#i-swap"/></svg></span></div>
+      <input id="ba-range" type="range" min="0" max="100" value="50" aria-label="Arraste para comparar antes e depois">
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPLORADOR DO SISTEMA ================= -->
+<section class="sec alt" id="sistema">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <span class="eyebrow">O sistema</span>
+      <h2>Seis áreas. Uma só base de dados.</h2>
+      <p class="sub">Cada operação alimenta as outras: uma factura emitida gera o lançamento contabilístico, actualiza a caixa e avisa o cliente.</p>
+    </div>
+
+    <div class="xp" id="xp" data-reveal>
+      <div class="xp-tabs" role="tablist" aria-label="Áreas do sistema">
+        <button class="xp-tab on" role="tab" id="t1" aria-controls="p1" aria-selected="true"><svg class="ic"><use href="#i-file"/></svg><span>Facturação</span><i></i></button>
+        <button class="xp-tab" role="tab" id="t2" aria-controls="p2" aria-selected="false" tabindex="-1"><svg class="ic"><use href="#i-calc"/></svg><span>Contabilidade</span><i></i></button>
+        <button class="xp-tab" role="tab" id="t3" aria-controls="p3" aria-selected="false" tabindex="-1"><svg class="ic"><use href="#i-wallet"/></svg><span>Tesouraria</span><i></i></button>
+        <button class="xp-tab" role="tab" id="t4" aria-controls="p4" aria-selected="false" tabindex="-1"><svg class="ic"><use href="#i-trend"/></svg><span>Vendas</span><i></i></button>
+        <button class="xp-tab" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><svg class="ic"><use href="#i-folder"/></svg><span>Projectos</span><i></i></button>
+        <button class="xp-tab" role="tab" id="t6" aria-controls="p6" aria-selected="false" tabindex="-1"><svg class="ic"><use href="#i-users"/></svg><span>Pessoas</span><i></i></button>
+      </div>
+
+      <div class="xp-stage">
+        <!-- 1 Facturação -->
+        <div class="xp-panel on" role="tabpanel" id="p1" aria-labelledby="t1">
+          <div class="xp-copy"><h3>Facturação</h3><p>Facturas, pró-formas, notas de crédito e de débito, guias de transporte e recibos, com numeração por série.</p>
+            <ul><li><svg class="ic"><use href="#i-check"/></svg>IVA, QR code e hash em cada documento</li><li><svg class="ic"><use href="#i-check"/></svg>Cliente avisado por WhatsApp e e-mail: emissão, vencimento e pagamento</li><li><svg class="ic"><use href="#i-check"/></svg>Multa e juros de mora configuráveis</li></ul></div>
+          <div class="xp-mock"><div class="doc">
+            <div class="doc-h"><b>Factura · exemplo</b><span class="chip ok">Emitida</span></div>
+            <div class="ln"><i></i><i class="w"></i><b>Item A</b></div><div class="ln"><i></i><i class="w2"></i><b>Item B</b></div><div class="ln"><i></i><i class="w3"></i><b>Item C</b></div>
+            <div class="doc-f"><div class="qr"></div><div><small>Documento fiscal</small><strong>IVA · QR · hash</strong></div></div>
+            <div class="flow3"><span class="chip ok s1">Emitida</span><span class="chip wa s2">Avisado por WhatsApp</span><span class="chip ok s3">Paga</span></div>
+          </div></div>
+        </div>
+        <!-- 2 Contabilidade -->
+        <div class="xp-panel" role="tabpanel" id="p2" aria-labelledby="t2" hidden>
+          <div class="xp-copy"><h3>Contabilidade</h3><p>Cada factura gera o lançamento contabilístico, sem digitar duas vezes.</p>
+            <ul><li><svg class="ic"><use href="#i-check"/></svg>Plano de contas e partidas dobradas</li><li><svg class="ic"><use href="#i-check"/></svg>Apuramento de IVA, liquidado e dedutível</li><li><svg class="ic"><use href="#i-check"/></svg>Estimativa de Imposto Industrial</li></ul></div>
+          <div class="xp-mock"><div class="ledger">
+            <div class="lh"><span>Conta</span><span>Débito</span><span>Crédito</span></div>
+            <div class="lr r1"><span>Clientes</span><b></b><i></i></div><div class="lr r2"><span>Vendas</span><i></i><b></b></div><div class="lr r3"><span>IVA liquidado</span><i></i><b class="s"></b></div>
+            <div class="vat"><small>IVA liquidado vs dedutível</small><div class="vb"><i class="a"></i><i class="b"></i></div></div>
+          </div></div>
+        </div>
+        <!-- 3 Tesouraria -->
+        <div class="xp-panel" role="tabpanel" id="p3" aria-labelledby="t3" hidden>
+          <div class="xp-copy"><h3>Tesouraria</h3><p>Veja o que entra, o que sai e quem lhe deve.</p>
+            <ul><li><svg class="ic"><use href="#i-check"/></svg>Fluxo de caixa e facturas em aberto</li><li><svg class="ic"><use href="#i-check"/></svg>Despesas e fornecedores</li><li><svg class="ic"><use href="#i-check"/></svg>Aprovação antes de lançar a despesa</li></ul></div>
+          <div class="xp-mock"><div class="cash">
+            <small>Entradas vs saídas</small>
+            <div class="cb"><div><i class="in" style="--h:50%"></i><i class="out" style="--h:32%"></i></div><div><i class="in" style="--h:64%"></i><i class="out" style="--h:44%"></i></div><div><i class="in" style="--h:58%"></i><i class="out" style="--h:40%"></i></div><div><i class="in" style="--h:82%"></i><i class="out" style="--h:50%"></i></div><div><i class="in" style="--h:74%"></i><i class="out" style="--h:46%"></i></div></div>
+            <div class="appr"><span>Despesa pendente</span><em><b class="ok">Aprovar</b><b class="no">Rejeitar</b></em></div>
+          </div></div>
+        </div>
+        <!-- 4 Vendas -->
+        <div class="xp-panel" role="tabpanel" id="p4" aria-labelledby="t4" hidden>
+          <div class="xp-copy"><h3>Vendas (CRM)</h3><p>Do primeiro contacto à proposta, sem oportunidades esquecidas.</p>
+            <ul><li><svg class="ic"><use href="#i-check"/></svg>Oportunidades e funil comercial</li><li><svg class="ic"><use href="#i-check"/></svg>Alerta de proposta sem resposta</li><li><svg class="ic"><use href="#i-check"/></svg>Alerta de cobrança vencida</li></ul></div>
+          <div class="xp-mock"><div class="kan">
+            <div class="kc"><small>Novo</small><i></i><i></i></div>
+            <div class="kc"><small>Proposta</small><i></i><i class="alert"><em>Sem resposta</em></i></div>
+            <div class="kc"><small>Fechado</small><i class="won"></i><i class="mover"></i></div>
+          </div></div>
+        </div>
+        <!-- 5 Projectos -->
+        <div class="xp-panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+          <div class="xp-copy"><h3>Projectos</h3><p>Saiba o que está em risco antes de derrapar.</p>
+            <ul><li><svg class="ic"><use href="#i-check"/></svg>Execução e progresso</li><li><svg class="ic"><use href="#i-check"/></svg>Dependências entre tarefas</li><li><svg class="ic"><use href="#i-check"/></svg>Risco de prazo calculado automaticamente</li></ul></div>
+          <div class="xp-mock"><div class="gantt">
+            <div class="gr"><span>Fase 1</span><div><i style="--w:92%"></i></div></div>
+            <div class="gr"><span>Fase 2</span><div><i style="--w:68%"></i></div></div>
+            <div class="gr risk"><span>Fase 3</span><div><i style="--w:34%"></i></div><em>Risco de prazo</em></div>
+            <div class="gr"><span>Fase 4</span><div><i style="--w:12%"></i></div></div>
+          </div></div>
+        </div>
+        <!-- 6 Pessoas -->
+        <div class="xp-panel" role="tabpanel" id="p6" aria-labelledby="t6" hidden>
+          <div class="xp-copy"><h3>Pessoas</h3><p>A equipa e a sua capacidade num só lugar.</p>
+            <ul><li><svg class="ic"><use href="#i-check"/></svg>Colaboradores e capacidade</li><li><svg class="ic"><use href="#i-check"/></svg>Formação interna e desenvolvimento</li><li><svg class="ic"><use href="#i-check"/></svg>Acesso por utilizador e permissões</li></ul></div>
+          <div class="xp-mock"><div class="team">
+            <div class="tr"><u class="av a1"></u><span>Capacidade</span><div><i style="--w:84%"></i></div></div>
+            <div class="tr"><u class="av a2"></u><span>Capacidade</span><div><i style="--w:62%"></i></div></div>
+            <div class="tr"><u class="av a3"></u><span>Capacidade</span><div><i style="--w:76%"></i></div></div>
+            <div class="tr tr-f"><u class="av a4"></u><span>Formação</span><div><i style="--w:55%"></i></div></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ai" data-reveal>
+      <div>
+        <span class="pill"><i></i> Gestão e decisão</span>
+        <h3>Uma IA que trabalha sobre os dados da sua empresa</h3>
+        <p>O painel de comando junta o que importa e o assistente responde a perguntas como “onde estou a perder dinheiro?” ou “como está o pipeline comercial?”.</p>
+      </div>
+      <ul data-stagger>
+        <li><svg class="ic"><use href="#i-check"/></svg> Painel de comando com briefing executivo diário</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Registo das decisões da direcção e do seu resultado</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Relatórios comerciais, financeiros, de projectos e de pessoas</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Alertas automáticos: propostas sem resposta, cobranças vencidas, projectos em risco</li>
+        <li><svg class="ic"><use href="#i-check"/></svg> Funciona para uma empresa ou para um grupo de empresas</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMO FUNCIONA ================= -->
+<section class="sec" id="como-funciona">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <span class="eyebrow">Como funciona</span>
+      <h2>Da compra ao arranque, sem complicações</h2>
+    </div>
+    <div class="steps" data-stagger>
+      <div class="step spot"><h3>Escolha e pague</h3><p>Escolha o pacote e pague em kwanzas por Multicaixa Express. Recebe o pedido na app e aprova em segundos.</p></div>
+      <div class="step spot"><h3>Nós implementamos</h3><p>Configuramos os módulos contratados, criamos os utilizadores e permissões e importamos os dados iniciais acordados.</p></div>
+      <div class="step spot"><h3>Formação e arranque</h3><p>Formamos a sua equipa e acompanhamos o arranque. Depois, a mensalidade garante acesso, actualizações e suporte técnico.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VALORES ================= -->
+<section class="sec alt" id="valores">
+  <div class="wrap">
+    <div class="head center" data-reveal>
+      <span class="eyebrow">Valores</span>
+      <h2>Valores claros, em kwanzas</h2>
+      <p class="sub">Um pagamento de implementação e uma mensalidade fixa. Escolha o pacote e compre já.</p>
+    </div>
+    <div class="prices" data-stagger>
+      <article class="price spot">
+        <h3>Implementação</h3><p class="kind">Pagamento único</p>
+        <div class="amount"><span data-count="1500000" data-kz>1.500.000</span> <small>Kz</small></div><p class="calc">&nbsp;</p>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg> Configuração dos módulos contratados</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Utilizadores e permissões</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Importação inicial dos dados acordados</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Formação da equipa</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Acompanhamento no arranque</li>
+        </ul>
+        <a class="btn btn-line btn-block mag" href="checkout.html?plano=implementacao">Comprar</a>
+      </article>
+
+      <article class="price spot">
+        <h3>Mensalidade</h3><p class="kind">Por mês</p>
+        <div class="amount"><span data-count="150000" data-kz>150.000</span> <small>Kz / mês</small></div><p class="calc">&nbsp;</p>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg> Acesso à plataforma</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Alojamento</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Actualizações</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Suporte técnico corrente</li>
+        </ul>
+        <p class="note">Integrações com outros sistemas, migrações complexas e funcionalidades personalizadas são orçamentadas à parte.</p>
+        <a class="btn btn-line btn-block mag" href="checkout.html?plano=mensalidade">Comprar</a>
+      </article>
+
+      <article class="price hot spot">
+        <span class="badge">Melhor para começar</span>
+        <h3>Pacote do 1.º ano</h3><p class="kind">Implementação + 12 mensalidades</p>
+        <div class="amount"><span data-count="3300000" data-kz>3.300.000</span> <small>Kz</small></div><p class="calc">1.500.000 + 12 × 150.000 Kz</p>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg> Implementação completa</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> 12 meses de acesso, alojamento e actualizações</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Suporte técnico durante 12 meses</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Formação e acompanhamento no arranque</li>
+        </ul>
+        <a class="btn btn-primary btn-block mag shine" href="checkout.html?plano=ano">Comprar pacote</a>
+      </article>
+
+      <article class="price spot">
+        <h3>Desenvolvimento de raiz</h3><p class="kind">Sistema à medida da sua empresa</p>
+        <div class="amount range">15 a 30 milhões <small>Kz</small></div><p class="calc">Referência para uma 1.ª versão operacional</p>
+        <ul>
+          <li><svg class="ic"><use href="#i-check"/></svg> O orçamento final depende dos módulos, integrações, automação e funcionalidades de IA</li>
+          <li><svg class="ic"><use href="#i-check"/></svg> Manutenção, alojamento e entrega do código-fonte definidos na proposta</li>
+        </ul>
+        <a class="btn btn-line btn-block mag" data-whatsapp="Olá! Quero um orçamento para um sistema desenvolvido de raiz." href="#perguntas">Pedir orçamento</a>
+        <p class="note" data-sem-whatsapp hidden style="margin:auto 0 0">Fale com a nossa equipa para receber o orçamento.</p>
+      </article>
+    </div>
+    <p class="fine">Valores em kwanzas (Kz).</p>
+
+    <div class="pay" data-reveal>
+      <div class="ico"><svg class="ic"><use href="#i-phone"/></svg></div>
+      <div>
+        <h3>Pague pela app Multicaixa Express</h3>
+        <p>No checkout introduz o número do telemóvel associado ao Multicaixa Express, recebe o pedido de pagamento na app e aprova. Nunca lhe pedimos o PIN nem dados de cartão.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="perguntas">
+  <div class="wrap">
+    <div class="head center" data-reveal><span class="eyebrow">Perguntas frequentes</span><h2>Ainda com dúvidas?</h2></div>
+    <div class="faq" data-stagger>
+      <details><summary>O que inclui a implementação?</summary><p>A configuração dos módulos contratados, a criação de utilizadores e permissões, a importação inicial dos dados acordados, a formação da equipa e o acompanhamento no arranque. É um pagamento único.</p></details>
+      <details><summary>O que inclui a mensalidade?</summary><p>O acesso à plataforma, o alojamento, as actualizações e o suporte técnico corrente.</p></details>
+      <details><summary>E as integrações com outros sistemas?</summary><p>Integrações com outros sistemas, migrações complexas e funcionalidades personalizadas são orçamentadas à parte, depois de percebermos o que precisa.</p></details>
+      <details><summary>Como funciona o pagamento por Multicaixa Express?</summary><p>No checkout indica o número de telemóvel associado ao Multicaixa Express. Recebe um pedido de pagamento na app e tem cerca de 60 segundos para o aprovar. A página mostra a confirmação assim que o pagamento é aprovado.</p></details>
+      <details><summary>Posso ter um sistema feito de raiz?</summary><p>Sim. Como referência inicial para uma primeira versão operacional, o investimento é de 15 a 30 milhões de Kz. O orçamento final depende dos módulos, das integrações, do nível de automação e das funcionalidades de inteligência artificial. Manutenção, alojamento e condições de entrega do código-fonte ficam definidos na proposta.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="final" id="fim">
+  <div class="final-bg" aria-hidden="true"><div class="orb o1"></div><div class="orb o3"></div></div>
+  <div class="wrap" data-reveal>
+    <h2>A gestão em Angola está a mudar. Comande a sua empresa com dados.</h2>
+    <p>Escolha o pacote, pague por Multicaixa Express e a nossa equipa trata do arranque.</p>
+    <div class="cta">
+      <a class="btn btn-primary mag shine" href="checkout.html?plano=ano">Comprar o pacote do 1.º ano <svg class="ic"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost mag" data-whatsapp="Olá! Quero saber mais sobre o Marksuite." href="#valores"><svg class="ic"><use href="#i-wa"/></svg> Falar com a equipa</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="lg"><img src="assets/logo.png" alt="Marksuite" width="50" height="30"></span>
+    <span>© 2026 Mark Seller · Luanda, Angola</span>
+  </div>
+</footer>
+
+<a class="sticky-cta" id="sticky" href="#valores">Ver valores e comprar <svg class="ic"><use href="#i-arrow"/></svg></a>
+
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/motion.js"></script>
+</body>
+</html>
