@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-AO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout — Marksuite</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0B1220">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect width="18" height="11" x="3" y="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.7 8.9a1 1 0 0 1-.6 0C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.2-2.7a1.2 1.2 0 0 1 1.6 0C14.5 3.8 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></symbol>
+</svg>
+
+<header class="co-top">
+  <div class="wrap">
+    <a href="index.html" aria-label="Marksuite — início"><img src="assets/logo.png" alt="Marksuite" height="40" width="67" style="height:40px;display:block"></a>
+    <span class="secure"><svg class="ic"><use href="#i-lock"/></svg> Checkout seguro</span>
+    <a class="back" href="index.html#valores">← Voltar aos valores</a>
+  </div>
+</header>
+
+<main class="co">
+  <div class="wrap">
+    <div id="demo" class="demo-banner" hidden>Modo demonstração: nenhum pedido é enviado e nenhum pagamento é feito.</div>
+
+    <div class="co-grid">
+      <div>
+        <!-- FORMULÁRIO -->
+        <div id="v-form">
+          <h1>Finalizar compra</h1>
+          <p class="intro">Preencha os dados e pague por Multicaixa Express. Demora menos de dois minutos.</p>
+
+          <form id="f" novalidate>
+            <section class="box" aria-labelledby="t1">
+              <h2 id="t1"><span>1</span> Escolha o pacote</h2>
+              <div class="opts" id="planos" role="radiogroup" aria-labelledby="t1"></div>
+            </section>
+
+            <section class="box" aria-labelledby="t2">
+              <h2 id="t2"><span>2</span> Os seus dados</h2>
+              <div class="row2">
+                <div class="f" data-f="nome"><label for="nome">Nome completo <i>*</i></label><input id="nome" name="nome" type="text" autocomplete="name" placeholder="Ex.: Maria João"><div class="msg">Indique o seu nome completo.</div></div>
+                <div class="f" data-f="empresa"><label for="empresa">Empresa <i>*</i></label><input id="empresa" name="empresa" type="text" autocomplete="organization" placeholder="Nome da empresa"><div class="msg">Indique o nome da empresa.</div></div>
+              </div>
+              <div class="row2">
+                <div class="f" data-f="nif"><label for="nif">NIF (opcional)</label><input id="nif" name="nif" type="text" inputmode="numeric" autocomplete="off" placeholder="Número de contribuinte"></div>
+                <div class="f" data-f="email"><label for="email">E-mail <i>*</i></label><input id="email" name="email" type="email" autocomplete="email" placeholder="nome@empresa.ao"><div class="msg">Indique um e-mail válido.</div></div>
+              </div>
+              <div class="f" data-f="whatsapp"><label for="whatsapp">WhatsApp <i>*</i></label>
+                <div class="phone"><span>+244</span><input id="whatsapp" name="whatsapp" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="9XX XXX XXX" maxlength="11"></div>
+                <div class="msg">Indique um número de WhatsApp com 9 dígitos.</div>
+                <div class="hint">É por aqui que a nossa equipa o contacta para iniciar a implementação.</div>
+              </div>
+            </section>
+
+            <section class="box" aria-labelledby="t3">
+              <h2 id="t3"><span>3</span> Pagamento</h2>
+              <div class="method">
+                <div class="logo"><svg class="ic"><use href="#i-phone"/></svg></div>
+                <div><b>Multicaixa Express</b><small>Pague com a app do seu banco, em kwanzas</small></div>
+                <svg class="ic ck"><use href="#i-check"/></svg>
+              </div>
+              <div class="f" data-f="expressPhone"><label for="expressPhone">Número de telemóvel Multicaixa Express <i>*</i></label>
+                <div class="phone"><span>+244</span><input id="expressPhone" name="expressPhone" type="tel" inputmode="numeric" autocomplete="off" placeholder="9XX XXX XXX" maxlength="11"></div>
+                <div class="msg">Indique os 9 dígitos do número associado ao Multicaixa Express (começa por 9).</div>
+              </div>
+              <label class="chk"><input type="checkbox" id="mesmo"> Usar o mesmo número do WhatsApp</label>
+              <ol class="how">
+                <li>Clique em pagar e enviamos o pedido para o seu Multicaixa Express.</li>
+                <li>Abra a app e aprove o pagamento (tem cerca de 60 segundos).</li>
+                <li>Esta página mostra a confirmação assim que aprovar.</li>
+              </ol>
+              <label class="chk" data-f="termos"><input type="checkbox" id="aceito" name="aceito"> <span>Li e aceito que o pagamento do pacote seleccionado seja pedido ao meu Multicaixa Express. <i style="color:#DC2626;font-style:normal">*</i></span></label>
+              <div class="alert" id="alerta" role="alert"></div>
+              <button class="btn btn-primary btn-block" id="pagar" type="submit" style="margin-top:14px;padding:16px 22px;font-size:16px"></button>
+              <p class="safe"><svg class="ic"><use href="#i-shield"/></svg> O pagamento é processado pelo Multicaixa Express. Nunca pedimos o seu PIN nem dados de cartão.</p>
+            </section>
+          </form>
+        </div>
+
+        <!-- ESTADOS -->
+        <div id="v-enviando" class="state" hidden aria-live="polite">
+          <div class="spin"></div>
+          <h2>A enviar o seu pedido…</h2>
+          <p>Um instante, estamos a contactar o Multicaixa Express.</p>
+        </div>
+
+        <div id="v-aguardar" class="state" hidden aria-live="polite">
+          <div class="ring">
+            <svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="52"/><circle class="fg" id="anel" cx="60" cy="60" r="52" stroke-dasharray="326.7" stroke-dashoffset="0"/></svg>
+            <div class="ph"><svg class="ic"><use href="#i-phone"/></svg></div>
+          </div>
+          <div class="secs"><span id="seg">90</span> s</div>
+          <h2>Aprove o pagamento na app Multicaixa Express</h2>
+          <p>Enviámos um pedido de <b id="a-valor"></b> para o número <b id="a-tel"></b>. Abra a app Multicaixa Express e aprove.</p>
+          <span class="ord">Pedido <b id="a-ped"></b> · não feche esta página</span>
+        </div>
+
+        <div id="v-pago" class="state" hidden aria-live="polite">
+          <div class="okc"><svg class="ic"><use href="#i-check"/></svg></div>
+          <h2>Pagamento confirmado!</h2>
+          <p>Obrigado, <b id="p-nome"></b>. A nossa equipa vai contactá-lo por WhatsApp para iniciar a implementação do Marksuite.</p>
+          <span class="ord">Pedido <b id="p-ped"></b> · <span id="p-valor"></span></span><br>
+          <a class="btn btn-line" href="index.html">Voltar ao site</a>
+        </div>
+
+        <div id="v-manual" class="state" hidden aria-live="polite">
+          <div class="okc"><svg class="ic"><use href="#i-check"/></svg></div>
+          <h2>Pedido registado</h2>
+          <p id="m-msg"></p>
+          <span class="ord">Pedido <b id="m-ped"></b> · <span id="m-valor"></span></span><br>
+          <a class="btn btn-line" href="index.html">Voltar ao site</a>
+        </div>
+
+        <div id="v-falhou" class="state" hidden aria-live="polite">
+          <div class="badc"><svg class="ic"><use href="#i-x"/></svg></div>
+          <h2 id="x-tit">O pagamento não foi concluído</h2>
+          <p id="x-msg"></p>
+          <button class="btn btn-primary" id="x-retry" type="button">Tentar de novo</button>
+        </div>
+      </div>
+
+      <aside class="summary" aria-label="Resumo do pedido">
+        <div class="box">
+          <h2>Resumo do pedido</h2>
+          <div class="sum-plan"><div><b id="s-nome"></b><small id="s-tipo"></small></div><div class="v" id="s-valor"></div></div>
+          <ul class="sum-list" id="s-inclui"></ul>
+          <div class="total"><span>Total a pagar</span><b id="s-total"></b></div>
+          <p class="sum-note">Valores em kwanzas (Kz).</p>
+        </div>
+      </aside>
+    </div>
+  </div>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/site.js"></script>
+<script src="js/checkout.js"></script>
+</body>
+</html>
